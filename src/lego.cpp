@@ -12,15 +12,16 @@
 
 #include "defs.h"
 #include "msg.h"
+#include "argsparser.h"
 
 int32_t main (int argc, char *argv[]){
 
   highResClock::time_point exeStartTime = highResClock::now();
-/*  
+  
   // for access to Functions (object 'function' on memory stack)
   Functions function;
   function.commandLineParser(argc, argv); // parse the command line
-*/  
+  
   // Record end time
   highResClock::time_point exeFinishTime = highResClock::now();
 
