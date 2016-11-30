@@ -4,6 +4,7 @@
 #include <fstream>
 
 #include "argsparser.h"
+#include "cmodel.h"
 #include "msg.h"
 
 //////////////////////////////////////////////////////////////////////////////
@@ -128,14 +129,12 @@ int8_t Functions::commandLineParser(int argc, char **argv){
       }
     }
     
-  /*
   if(t_flag){
-    FCM f;
+    CM f;
     f.setFileAddress(targetFileName);
     f.setInvertedRepeat((bool) i_flag);
-    f.printHashTable(f.buildHashTable());
+    f.printHashTable(f.getHashTable());
     }
-  */
 
   if(r_flag){
     // TODO

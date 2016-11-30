@@ -5,16 +5,17 @@
 #define __STDC_FORMAT_MACROS
 #include <inttypes.h>
 #if defined(_MSC_VER)
-#include <io.h>
+  #include <io.h>
 #else
-#include <unistd.h>
+  #include <unistd.h>
 #endif
 
 #include "defs.h"
 #include "msg.h"
+#include "cmodel.h"
 #include "argsparser.h"
 
-int32_t main (int argc, char *argv[]){
+int32_t main(int argc, char *argv[]){
 
   highResClock::time_point exeStartTime = highResClock::now();
   
@@ -31,3 +32,4 @@ int32_t main (int argc, char *argv[]){
     
   return 0;
   }
+
